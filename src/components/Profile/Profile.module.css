@@ -1,10 +1,11 @@
 .container {
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 250px;
+  width: 300px;
   border-radius: 8px;
-  border: 2px solid black;
+  border: 3px solid rgb(80, 78, 78);
 }
 
 .profile {
@@ -22,9 +23,9 @@
 }
 
 .avatar {
-  width: 100px;
+  width: 120px;
   border-radius: 50%;
-  background-color: dimgrey;
+  background-color: rgb(228, 221, 221);
 }
 
 .name {
@@ -36,35 +37,40 @@
 
 .tag,
 .location {
+  font-size: 18px;
   color: gray;
 }
 
 .stats {
   display: flex;
-  justify-content: space-around;
-  background-color: lightgray;
-  margin: 0;
-  border-top: 2px solid dimgrey;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
+  justify-content: space-between;
+  border-top: 1px solid #141313;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  border: 1px solid grey;
+  text-align: center;
+  flex: 1;
+}
+
+.item::not(:last-child) {
+  border-right: 1px solid #eee;
 }
 
 .label {
-  display: grid;
-  justify-items: center;
-  font-size: 14px;
-  color: gray;
-  padding: 18px;
-  color: black;
-}
-.label:not(:last-child) {
-  border-right: 2px solid dimgray;
-}
-.label:first-child {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-top: 10px;
+  font-size: 16px;
+  color: #888;
+  margin: 0;
 }
 
 .quantity {
+  font-size: 16px;
   font-weight: bold;
+  color: #333;
+  margin: 5px 0 0;
+  padding-bottom: 10px;
 }
