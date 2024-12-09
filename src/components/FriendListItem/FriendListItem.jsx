@@ -22,7 +22,7 @@ const FriendListItem = ({
             : styles.offline
         }`}
       >
-        {isOnline ? "online" : "offline"}
+        {isOnline ? "Online" : "Offline"}
       </p>
     </li>
   );
